@@ -14,7 +14,7 @@
 <div>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
  <a href="https://github.com/chaeha617" align="center">
-       <img src=https://img.shields.io/badge/chaeha617-brown?style=flat-square/>
+       <img src=https://img.shields.io/badge/chaeha617-A86454?style=flat-square/>
  </a>
  <a href="https://github.com/kimju-hee" align="center">
    <img src=https://img.shields.io/badge/-kimju--hee-pink?style=flat-square/>
