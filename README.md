@@ -14,16 +14,16 @@
 <div>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
  <a href="https://github.com/chaeha617" align="center">
-       <img src=https://img.shields.io/badge/chaeha617-e67c7c?style=flat-square/>
+       <img src=https://img.shields.io/badge/chaeha617-brown?style=flat-square/>
  </a>
  <a href="https://github.com/kimju-hee" align="center">
    <img src=https://img.shields.io/badge/-kimju--hee-pink?style=flat-square/>
  </a>
  <a href="https://https://github.com/Egs0619" align="center">
-   <img src=https://img.shields.io/badge/Egs0619-e67c7c?style=flat-square/>
+   <img src=https://img.shields.io/badge/Egs0619-grey?style=flat-square/>
  </a>
  <a href="https://github.com/go-ring" align="center">
-       <img src=https://img.shields.io/badge/LeeGaEun-7dd600?style=flat-square/>
+       <img src=https://img.shields.io/badge/go-ring-7dd600?style=flat-square/>
  </a>
   
 </div>
