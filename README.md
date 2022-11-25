@@ -17,13 +17,13 @@
        <img src=https://img.shields.io/badge/chaeha617-A86454?style=flat-square/>
  </a>
  <a href="https://github.com/kimju-hee" align="center">
-   <img src=https://img.shields.io/badge/-kimju--hee-EF2D5E?style=flat-square/>
+   <img src=https://img.shields.io/badge/-kimju--hee-9999FF?style=flat-square/>
  </a>
  <a href="https://https://github.com/Egs0619" align="center">
    <img src=https://img.shields.io/badge/Egs0619-lightgrey?style=flat-square/>
  </a>
  <a href="https://github.com/go-ring" align="center">
-       <img src=https://img.shields.io/badge/-go--ring-orange?style=flat-square/>
+       <img src=https://img.shields.io/badge/-go--ring-408294?style=flat-square/>
  </a>
   
 </div>
