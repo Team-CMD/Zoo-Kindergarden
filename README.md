@@ -17,7 +17,7 @@
        <img src=https://img.shields.io/badge/chaeha617-A86454?style=flat-square/>
  </a>
  <a href="https://github.com/kimju-hee" align="center">
-   <img src=https://img.shields.io/badge/-kimju--hee-pink?style=flat-square/>
+   <img src=https://img.shields.io/badge/-kimju--hee-EF2D5E?style=flat-square/>
  </a>
  <a href="https://https://github.com/Egs0619" align="center">
    <img src=https://img.shields.io/badge/Egs0619-grey?style=flat-square/>
