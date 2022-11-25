@@ -23,7 +23,7 @@
    <img src=https://img.shields.io/badge/Egs0619-grey?style=flat-square/>
  </a>
  <a href="https://github.com/go-ring" align="center">
-       <img src=https://img.shields.io/badge/-go--ring-#eee6c4?style=flat-square/>
+       <img src=https://img.shields.io/badge/-go--ring-orange?style=flat-square/>
  </a>
   
 </div>
