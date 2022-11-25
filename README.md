@@ -20,7 +20,7 @@
    <img src=https://img.shields.io/badge/-kimju--hee-EF2D5E?style=flat-square/>
  </a>
  <a href="https://https://github.com/Egs0619" align="center">
-   <img src=https://img.shields.io/badge/Egs0619-light-grey?style=flat-square/>
+   <img src=https://img.shields.io/badge/Egs0619-lightgrey?style=flat-square/>
  </a>
  <a href="https://github.com/go-ring" align="center">
        <img src=https://img.shields.io/badge/-go--ring-orange?style=flat-square/>
