@@ -14,7 +14,7 @@
 <div>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
  <a href="https://github.com/chaeha617" align="center">
-       <img src=https://img.shields.io/badge/chaeha617-A86454?style=flat-square/>
+       <img src=https://img.shields.io/badge/chaeha617-brown?style=flat-square/>
  </a>
  <a href="https://github.com/kimju-hee" align="center">
    <img src=https://img.shields.io/badge/-kimju--hee-pink?style=flat-square/>
@@ -23,7 +23,7 @@
    <img src=https://img.shields.io/badge/Egs0619-grey?style=flat-square/>
  </a>
  <a href="https://github.com/go-ring" align="center">
-       <img src=https://img.shields.io/badge/-go--ring-orangesoda?style=flat-square/>
+       <img src=https://img.shields.io/badge/-go--ring-#eee6c4?style=flat-square/>
  </a>
   
 </div>
