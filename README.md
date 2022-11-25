@@ -27,3 +27,6 @@
  </a>
   
 </div>
+ <a href="https://github.com/Team-CMD/Zoo-Kindergarden/wiki/Zoo-Kindergarden-WIKI%F0%9F%93%9A#proceedings-" align="center">
+      ### 📚 WIKI
+ </a>
