@@ -47,9 +47,6 @@ def play(x, y):  # 메인함수
             second_pick = card_idx
             click_num = 0
             attempt += 1
-            print(pic_num[first_pick])
-            print(pic_num[second_pick])
-            print(pic_num[second_pick]-8)
             
             if pic_num[first_pick] == pic_num[second_pick]-8 or pic_num[first_pick]-8 == pic_num[second_pick]:
                 score += 1
@@ -104,7 +101,6 @@ for i in range(16):
     pic_num += re.findall(r'\d+', img_list[i])
     turtles[i].shape(img_list[i])
 pic_num = list(map(int, pic_num))
-print(pic_num)
 time.sleep(3)  # 3초 후
 
 for i in range(16):
