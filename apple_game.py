@@ -14,7 +14,7 @@ done = False
 clock = pygame.time.Clock()
 
 def runGame():
-    bgm.play()
+    bgm.play(loops=-1)
     back_image = pygame.image.load('../Zoo-Kindergarden/resource/backgr.jpg')
     back_image = pygame.transform.scale(back_image, (600, 600))
     apple_image = pygame.image.load('../Zoo-Kindergarden/resource/apple.png')
