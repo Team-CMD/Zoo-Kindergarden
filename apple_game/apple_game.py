@@ -15,9 +15,9 @@ clock = pygame.time.Clock()
 
 def runGame():
     bgm.play(loops=-1)
-    back_image = pygame.image.load('../Zoo-Kindergarden/resource/backgr.jpg')
+    back_image = pygame.image.load('resource/backgr.jpg')
     back_image = pygame.transform.scale(back_image, (600, 600))
-    apple_image = pygame.image.load('../Zoo-Kindergarden/resource/apple.png')
+    apple_image = pygame.image.load('resource/apple.png')
     apple_image = pygame.transform.scale(apple_image, (50, 50))
     apples = []
 
@@ -28,7 +28,7 @@ def runGame():
         dy = random.randint(3, 9)  #빠르기
         apples.append({'rect': rect, 'dy': dy})
 
-    person_image = pygame.image.load('../Zoo-Kindergarden/resource/person.png')
+    person_image = pygame.image.load('resource/person.png')
     person_image = pygame.transform.scale(person_image, (90, 160))
     person = pygame.Rect(person_image.get_rect())
     person.left = size[0] // 2 - person.width // 2
