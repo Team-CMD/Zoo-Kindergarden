@@ -5,7 +5,7 @@ pygame.init()  # 2. pygame 초기화
 
 # 3. pygame에 사용되는 전역변수 선언
 
-
+bgm = pygame.mixer.Sound('../Zoo-Kindergarden/resource/bgm.mp3')
 size = [600, 600]
 screen = pygame.display.set_mode(size)
 
@@ -13,6 +13,7 @@ done = False
 clock = pygame.time.Clock()
 
 def runGame():
+    bgm.play()
     back_image = pygame.image.load('../Zoo-Kindergarden/resource/backgr.jpg')
     back_image = pygame.transform.scale(back_image, (600, 600))
     apple_image = pygame.image.load('../Zoo-Kindergarden/resource/apple.png')
