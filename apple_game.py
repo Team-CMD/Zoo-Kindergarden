@@ -5,7 +5,8 @@ pygame.init()  # 2. pygame 초기화
 
 # 3. pygame에 사용되는 전역변수 선언
 
-bgm = pygame.mixer.Sound('../Zoo-Kindergarden/resource/bgm.mp3')
+bgm = pygame.mixer.Sound('Girasol-Quincas-Moreira.wav')
+man_to_apple = pygame.mixer.Sound('Pop.wav')
 size = [600, 600]
 screen = pygame.display.set_mode(size)
 
@@ -62,6 +63,7 @@ def runGame():
                 rect.left = random.randint(100, size[0]-100)
                 rect.top = -100
                 dy = random.randint(3, 9)
+                man_to_apple.play()
                 apples.append({'rect': rect, 'dy': dy})
 
             screen.blit(apple_image, apple['rect'])
