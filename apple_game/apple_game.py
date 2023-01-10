@@ -5,8 +5,8 @@ pygame.init()  # 2. pygame 초기화
 
 # 3. pygame에 사용되는 전역변수 선언
 
-bgm = pygame.mixer.Sound('./resource/Girasol-Quincas-Moreira.wav')
-man_to_apple = pygame.mixer.Sound('./resource/Pop.wav')
+bgm = pygame.mixer.Sound('./apple_game/resource/Girasol-Quincas-Moreira.wav')
+man_to_apple = pygame.mixer.Sound('./apple_game/resource/Pop.wav')
 size = [600, 600]
 screen = pygame.display.set_mode(size)
 score = 0
@@ -17,9 +17,9 @@ clock = pygame.time.Clock()
 
 def runGame():
     bgm.play(loops=-1)
-    back_image = pygame.image.load('./resource/backgr.jpg')
+    back_image = pygame.image.load('./apple_game/resource/backgr.jpg')
     back_image = pygame.transform.scale(back_image, (600, 600))
-    apple_image = pygame.image.load('./resource/apple.png')
+    apple_image = pygame.image.load('./apple_game/resource/apple.png')
     apple_image = pygame.transform.scale(apple_image, (50, 50))
     apples = []
 
@@ -30,7 +30,7 @@ def runGame():
         dy = random.randint(3, 9)  #빠르기
         apples.append({'rect': rect, 'dy': dy})
 
-    person_image = pygame.image.load('resource/person.png')
+    person_image = pygame.image.load('./apple_game/resource/person.png')
     person_image = pygame.transform.scale(person_image, (90, 160))
     person = pygame.Rect(person_image.get_rect())
     person.left = size[0] // 2 - person.width // 2
@@ -103,16 +103,13 @@ def runGame():
         pygame.display.update()
 
     if done == 1:
-        gover_image = pygame.image.load('./resource/game_over.png')
+        gover_image = pygame.image.load('./apple_game/resource/game_over.png')
         gover_image = pygame.transform.scale(gover_image, (300, 300))
         screen.blit(gover_image, [150, 150])
     elif done == 2:
-        gclr_image = pygame.image.load('./resource/game_clear.png')
+        gclr_image = pygame.image.load('./apple_game/resource/game_clear.png')
         gclr_image = pygame.transform.scale(gclr_image, (300, 300))
         screen.blit(gclr_image, [150, 150])
     pygame.display.update()
     clock.tick(1)
-
-
-runGame()
-pygame.quit()
+    import main.run

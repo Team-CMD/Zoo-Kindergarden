@@ -16,7 +16,7 @@ def find_card(x,y):  # 마우스 클릭지점에 따라서 어떤 카드 선택�
     return min_idx
 
 
-def score_update(m):  # 점수판 
+def score_update(m):  # 점수판
     score_pen.clear()
     score_pen.write(f"점수 : {score}점 / 시도 : {attempt}번", False, "center", ("", 15))
 
@@ -41,7 +41,7 @@ def play(x, y):  # 메인함수
         popup.up()
         popup.speed(0)
         popup.goto(0, 0)
-        gameover = "./elements/gameover.gif"
+        gameover = "./CardGame/elements/gameover.gif"
         t.addshape(gameover)
         popup.shape(gameover)
         time.sleep(2)
@@ -75,7 +75,7 @@ def play(x, y):  # 메인함수
 
 scr = t.Screen()
 scr.setup(700, 700)
-scr.bgpic("./elements/background.gif")
+scr.bgpic("./CardGame/elements/background.gif")
 t.up()
 t.ht()
 t.goto(0, 290)
@@ -103,12 +103,12 @@ for x in range(4):
         new_turtle.goto(pos_x[x], pos_y[y])
         turtles.append(new_turtle)
 
-default_img = "./elements/default_img.gif"  # 가림막 불러오기
+default_img = "./CardGame/elements/default_img.gif"  # 가림막 불러오기
 t.addshape(default_img)
 
 img_list = []  # 이미지 불러오기
 for i in range(16):
-    img = f"elements/{i}.gif"
+    img = f"./CardGame/elements/{i}.gif"
     t.addshape(img)
     img_list.append(img)
 
