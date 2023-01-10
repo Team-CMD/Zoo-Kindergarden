@@ -5,8 +5,8 @@ pygame.init()  # 2. pygame 초기화
 
 # 3. pygame에 사용되는 전역변수 선언
 
-bgm = pygame.mixer.Sound('resource/Girasol-Quincas-Moreira.wav')
-man_to_apple = pygame.mixer.Sound('resource/Pop.wav')
+bgm = pygame.mixer.Sound('./resource/Girasol-Quincas-Moreira.wav')
+man_to_apple = pygame.mixer.Sound('./resource/Pop.wav')
 size = [600, 600]
 screen = pygame.display.set_mode(size)
 score = 0
@@ -17,9 +17,9 @@ clock = pygame.time.Clock()
 
 def runGame():
     bgm.play(loops=-1)
-    back_image = pygame.image.load('resource/backgr.jpg')
+    back_image = pygame.image.load('./resource/backgr.jpg')
     back_image = pygame.transform.scale(back_image, (600, 600))
-    apple_image = pygame.image.load('resource/apple.png')
+    apple_image = pygame.image.load('./resource/apple.png')
     apple_image = pygame.transform.scale(apple_image, (50, 50))
     apples = []
 
@@ -77,8 +77,7 @@ def runGame():
                 if score >= 20:
                     done = 2
                 apples.append({'rect': rect, 'dy': dy})
-
-            screen.blit(apple_image, apple['rect'])
+            screen.blit(apple_image, apples[idx]['rect'])
 
         for idx in range(len(apples)):
             apples[idx]['rect'].top += apples[idx]['dy']
@@ -103,11 +102,11 @@ def runGame():
         pygame.display.update()
 
     if done == 1:
-        gover_image = pygame.image.load('../zoo-main/apple_game/resource/game_over.png')
+        gover_image = pygame.image.load('./resource/game_over.png')
         gover_image = pygame.transform.scale(gover_image, (300, 300))
         screen.blit(gover_image, [150, 150])
     elif done == 2:
-        gclr_image = pygame.image.load('../zoo-main/apple_game/resource/game_clear.png')
+        gclr_image = pygame.image.load('./resource/game_clear.png')
         gclr_image = pygame.transform.scale(gclr_image, (300, 300))
         screen.blit(gclr_image, [150, 150])
     pygame.display.update()
