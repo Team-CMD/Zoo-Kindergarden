@@ -5,8 +5,8 @@ pygame.init()  # 2. pygame 초기화
 
 # 3. pygame에 사용되는 전역변수 선언
 
-bgm = pygame.mixer.Sound('Girasol-Quincas-Moreira.wav')
-man_to_apple = pygame.mixer.Sound('Pop.wav')
+bgm = pygame.mixer.Sound('resource/Girasol-Quincas-Moreira.wav')
+man_to_apple = pygame.mixer.Sound('resource/Pop.wav')
 size = [600, 600]
 screen = pygame.display.set_mode(size)
 
