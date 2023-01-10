@@ -46,7 +46,7 @@ def runGame():
 
         fontObj = pygame.font.Font(None, 32)
         textSurfaceObj = fontObj.render('Score : ' + str(score), True, (0, 0, 0))
-        textRectObj = textSurfaceObj.get_rect();
+        textRectObj = textSurfaceObj.get_rect()
         textRectObj.center = (70, 30)
         screen.blit(textSurfaceObj, textRectObj)
 
@@ -77,6 +77,7 @@ def runGame():
                 if score >= 20:
                     done = 2
                 apples.append({'rect': rect, 'dy': dy})
+            screen.blit(textSurfaceObj, textRectObj)
             screen.blit(apple_image, apples[idx]['rect'])
 
         for idx in range(len(apples)):
