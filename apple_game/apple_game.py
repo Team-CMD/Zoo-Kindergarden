@@ -9,9 +9,11 @@ bgm = pygame.mixer.Sound('resource/Girasol-Quincas-Moreira.wav')
 man_to_apple = pygame.mixer.Sound('resource/Pop.wav')
 size = [600, 600]
 screen = pygame.display.set_mode(size)
+score = 0
 
-done = False
+done = 0
 clock = pygame.time.Clock()
+
 
 def runGame():
     bgm.play(loops=-1)
@@ -35,11 +37,18 @@ def runGame():
     person.top = size[1] - person.height
     person_dx = 0
 
-
     global done
+    global score
+
     while not done:
         clock.tick(30)
         screen.blit(back_image, (0, 0))
+
+        fontObj = pygame.font.Font(None, 32)
+        textSurfaceObj = fontObj.render('Score : ' + str(score), True, (0, 0, 0))
+        textRectObj = textSurfaceObj.get_rect();
+        textRectObj.center = (70, 30)
+        screen.blit(textSurfaceObj, textRectObj)
 
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
@@ -56,28 +65,31 @@ def runGame():
                 elif event.key == pygame.K_RIGHT:
                     person_dx = 0
 
-        for apple in apples:
-            if apple['rect'].colliderect(person):
-                apples.remove(apple)
+        for idx in range(len(apples)):
+            if apples[idx]['rect'].colliderect(person):
+                apples.remove(apples[idx])
                 rect = pygame.Rect(apple_image.get_rect())
-                rect.left = random.randint(100, size[0]-100)
+                rect.left = random.randint(100, size[0] - 100)
                 rect.top = -100
                 dy = random.randint(3, 9)
                 man_to_apple.play()
+                score += 1
+                if score >= 20:
+                    done = 2
                 apples.append({'rect': rect, 'dy': dy})
 
             screen.blit(apple_image, apple['rect'])
 
-        for apple in apples:
-            apple['rect'].top += apple['dy']
-            if apple['rect'].top > size[1]:
-                apples.remove(apple)
+        for idx in range(len(apples)):
+            apples[idx]['rect'].top += apples[idx]['dy']
+            if apples[idx]['rect'].top > size[1]:
+                apples.remove(apples[idx])
                 rect = pygame.Rect(apple_image.get_rect())
-                rect.left = random.randint(100, size[0]-100)
+                rect.left = random.randint(100, size[0] - 100)
                 rect.top = -100
                 dy = random.randint(3, 9)
                 apples.append({'rect': rect, 'dy': dy})
-                done = True
+                done = 1
 
         person.left = person.left + person_dx
 
@@ -89,6 +101,17 @@ def runGame():
         screen.blit(person_image, person)
 
         pygame.display.update()
+
+    if done == 1:
+        gover_image = pygame.image.load('../zoo-main/apple_game/resource/game_over.png')
+        gover_image = pygame.transform.scale(gover_image, (300, 300))
+        screen.blit(gover_image, [150, 150])
+    elif done == 2:
+        gclr_image = pygame.image.load('../zoo-main/apple_game/resource/game_clear.png')
+        gclr_image = pygame.transform.scale(gclr_image, (300, 300))
+        screen.blit(gclr_image, [150, 150])
+    pygame.display.update()
+    clock.tick(1)
 
 
 runGame()
